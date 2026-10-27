@@ -17,7 +17,7 @@ x = data[['SepalLengthCm', 'SepalWidthCm',
 y = data['Species']
 
 x_train, x_test, y_train, y_test = train_test_split(
-    x, y, test_size=0.25, random_state=42
+    x, y, test_size=0.20, random_state=42
 )
 model = SVC()
 model.fit(x_train, y_train)
